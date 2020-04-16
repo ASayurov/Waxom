@@ -453,4 +453,107 @@
     }
 }
 // projects end
+// video start
+.video{
+    height: 700px;
+    padding: 210px 0 205px;
+    text-align: center;
+    margin: 0 auto;
+    &__inner{
+        max-width: 570px;
+        margin: 0 auto;
+    }
+}
+.video__inner-play{
+    padding-bottom: 35px;
+}
+.video__inner{
+    &-title{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        line-height: 1.2;
+        font-size: 30px;
+        color: #fff;
+        padding-bottom: 25px;
+    }
+    &-text{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        line-height: 1.8;
+        font-size: 16px;
+        color: #d1d1d1;
+        padding-bottom: 40px;
+    }
+    &-timecode{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        line-height: 1.8;
+        font-size: 14px;
+        color: #c7b299;
+    }
+}
+// video end
+// mobile start
+.mobile{
+    background-color: #fbfaf8;
+    padding:  0 170px 0;
+    height: 700px;
+}
+.mobile__inner-title{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        line-height: 1.2;
+        font-size: 30px;
+        color: #555555;
+        padding-bottom: 30px;
+}
+.mobile__inner-text{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    line-height: 1.8;
+    font-size: 14px;
+    color: #8c8c8c;
+    max-width: 700px;
+    margin-bottom: 40px;
+}
+.mobile__inner-list{
+    li{
+        list-style-image: url('../images/icons/arr.png');
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        line-height: 2;
+        font-size: 14px;
+        color: #8c8c8c;
+        margin-left: 70px;
+    }
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.8fr 0.9fr;
+    grid-template-rows: 2fr;
+    gap: 1px 1px;
+    grid-template-areas: "left left";
+  }
+  
+  .left {
+    padding-top: 70px;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    grid-template-rows: 2fr;
+    gap: 1px 1px;
+    grid-template-areas: ". Right";
+    grid-area: left;
+    height: 700px;
+  }
+  
+  .Right { 
+      padding-top: 130px;
+      grid-area: Right; 
+    }
+    .mobile__inner-img{
+        background-image: url('../images/icons/hand.png');
+        background-repeat: no-repeat;
+        height: 616px;
+    }
+// mobile end
   
