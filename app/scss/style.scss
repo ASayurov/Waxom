@@ -556,4 +556,54 @@
         height: 616px;
     }
 // mobile end
-  
+// figures start
+.figures{
+    background-image: url('/images/Background-brown.jpg');
+    background-repeat: no-repeat;
+    height: 300px;
+    padding: 60px 0 60px;
+}
+.figures__inner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.figures__item{
+    text-align: center;
+    width: 150px;
+    &-img{
+        padding-bottom: 20px;
+    }
+    &-number{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+        line-height: 1.2;
+        font-size: 48px;
+        color: #fff;
+        padding-bottom: 10px;
+    }
+    &-text{
+        position: relative;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        line-height: 1.2;
+        font-size: 14px;
+        color: #c7b299;
+        text-transform: uppercase;
+        &::before{
+            transition: all 0.3s;
+            content: "";
+            position: absolute;
+            width: 30px;
+            height: 3px;
+            background-color: #f1eee9;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            margin-bottom: -30px;
+        }
+    }
+}
+
+
+// figures end
